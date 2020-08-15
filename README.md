@@ -2,7 +2,7 @@
 
 Default Pandoc highlight themes are kind of boring. Here is the highlight theme I like to use. You can make your own by editing the `.theme` file.
 
-For RMarkdown,  your header should look something like:
+For RMarkdown,  your header should include something like:
 
 ```YAML
 ---
