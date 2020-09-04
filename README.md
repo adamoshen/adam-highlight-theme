@@ -12,7 +12,7 @@ output:
 ---
 ```
 
-The `.theme` file should also be in the same folder as the Rmd file you are knitting. 
+The `.theme` file should also be in the same folder as the Rmd file you are knitting otherwise the path to the `.theme` file should be specified.
 
 Example `.Rmd` file [here](https://github.com/adamshen1/adam-highlight-theme/blob/master/example.Rmd).
 
