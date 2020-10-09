@@ -14,7 +14,11 @@ knitr::opts_chunk$set(echo=TRUE, message=FALSE, warning=FALSE)
 
 # Here is some text
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum metus est, tincidunt eu tempus id, auctor in elit. Vivamus porta ornare tellus, non pretium metus luctus non. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam venenatis condimentum felis, non luctus tellus. Maecenas ullamcorper ipsum diam, nec semper odio semper vel. Etiam sagittis dui tristique magna volutpat blandit. Aliquam et tincidunt ante, a placerat urna. Maecenas a nibh leo. Nulla hendrerit luctus pulvinar. In pellentesque molestie ligula. Aenean aliquet vulputate leo ut vehicula.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum metus est, tincidunt eu tempus id, auctor in elit. 
+Vivamus porta ornare tellus, non pretium metus luctus non. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+Nam venenatis condimentum felis, non luctus tellus. Maecenas ullamcorper ipsum diam, nec semper odio semper vel. 
+Etiam sagittis dui tristique magna volutpat blandit. Aliquam et tincidunt ante, a placerat urna. Maecenas a nibh leo. 
+Nulla hendrerit luctus pulvinar. In pellentesque molestie ligula. Aenean aliquet vulputate leo ut vehicula.
 
 # Here is a chunk of commented text
 
