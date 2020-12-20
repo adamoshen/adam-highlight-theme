@@ -1,6 +1,6 @@
 # My Pandoc Highlight Theme
 
-Default Pandoc highlight themes are kind of boring. Here is the highlight theme I like to use. You can make your own by editing the `.theme` file (mine is based off of the `tango` highlight theme. 
+Default Pandoc highlight themes are kind of boring. Here is the highlight theme I like to use. You can make your own by editing the `.theme` file (mine is based off of the `tango` highlight theme). 
 
 ## PDF Output
 
@@ -14,7 +14,7 @@ output:
 ---
 ```
 
-The `.theme` file can either be in the same folder as the `.Rmd` file you are knitting, otherwise the path to the `.theme` file should be specified. **Note that this value must be a string and there cannot be a space before or after the `=` sign.**
+The `.theme` file can be in the same folder as the `.Rmd` file you are knitting, otherwise the path to the `.theme` file should be specified. **Note that this value must be a string and there cannot be a space before or after the `=` sign.**
 
 Example `.Rmd` file [here](https://github.com/adamoshen/adam-highlight-theme/blob/master/pdf/example.Rmd).
 
