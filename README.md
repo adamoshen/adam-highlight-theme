@@ -59,7 +59,7 @@ output:
 ---
 ```
 
-you will get an error that the theme you have specified is not one of the supported highlighted themes.
+you will get an error that the theme you have specified is not one of the supported highlight themes.
 
 Alternatively, if you try something like:
 
