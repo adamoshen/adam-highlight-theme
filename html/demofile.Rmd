@@ -1,0 +1,44 @@
+---
+title: "Demo file"
+author: "Adam Shen"
+date: "December 99th, 3123"
+output: 
+  html_document:
+    template: my_template.html
+    theme: cosmo
+    highlight: adam.theme
+    css: adam.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo=TRUE, message=FALSE, warning=FALSE, dpi=600, fig.align="center"
+)
+```
+
+```{r}
+library(ggplot2)
+theme_set(theme_bw())
+```
+
+```{r}
+# These are my favourite numbers
+fav_nums <- c(1, 9, 20, 376, 999)
+```
+
+```{r}
+data(rock)
+
+DT::datatable(rock)
+```
+
+```{r}
+ggplot(rock, aes(x=peri, y=area))+
+  geom_point()+
+  geom_smooth(method="loess", formula=y~x)
+```
+
+
+
+
+
