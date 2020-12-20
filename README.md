@@ -1,6 +1,6 @@
 # My Pandoc Highlight Theme
 
-Default Pandoc highlight themes are kind of boring. Here is the highlight theme I like to use. You can make your own by editing the `.theme` file (mine is based off of the `tango` highlight theme. 
+Default Pandoc highlight themes are kind of boring. Here is the highlight theme I like to use. You can make your own by editing the `.theme` file (mine is based off of the `tango` highlight theme). 
 
 ## PDF Output
 
