@@ -14,7 +14,7 @@ output:
 ---
 ```
 
-The `.theme` file can either be in the same folder as the Rmd file you are knitting, otherwise the path to the `.theme` file should be specified. *Note that there cannot be a space before or after the `=` sign.*
+The `.theme` file can either be in the same folder as the `.Rmd` file you are knitting, otherwise the path to the `.theme` file should be specified. **Note that there cannot be a space before or after the `=` sign.**
 
 Example `.Rmd` file [here](https://github.com/adamoshen/adam-highlight-theme/blob/master/pdf/example.Rmd).
 
@@ -33,7 +33,7 @@ output:
 ---
 ```
 
-Once again, the `.theme` file can be in the same folder, otherwise a path to the `.theme` file should be specified. *Note that the file name or path does not need to be a string (you can still supply a string).* You can still specify `theme:` and `css:` values as usual.
+Once again, the `.theme` file can be in the same folder, otherwise a path to the `.theme` file should be specified. **Note that the file name or path does not need to be a string (you can still supply a string).** You can also still specify `theme:` and `css:` values as usual.
 
 The `my_template.html` is a template html file used when knitting `.Rmd` files to plain html output (you should be able to see the location of this file in the RMarkdown console output when knitting to html). This template file can be found in the `rmarkdown` package installation files under:
 
