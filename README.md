@@ -33,7 +33,7 @@ output:
 ---
 ```
 
-The `my_template.html` is a template html file RMarkdown uses when knitting `.Rmd` files to html. You should be able to see the location of this template file in the RMarkdown console output whenver you knit a basic `.Rmd` file to html. This template file can be found in the `rmarkdown` package installation files under:
+The `my_template.html` is a template html file RMarkdown uses when knitting `.Rmd` files to html. You should be able to see the location of this template file in the RMarkdown console output whenever you knit a basic `.Rmd` file to html. This template file can be found in the `rmarkdown` package installation files under:
 
 ```
 /rmarkdown/rmd/h/default.html
