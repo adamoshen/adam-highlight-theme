@@ -37,8 +37,3 @@ ggplot(rock, aes(x=peri, y=area))+
   geom_point()+
   geom_smooth(method="loess", formula=y~x)
 ```
-
-
-
-
-

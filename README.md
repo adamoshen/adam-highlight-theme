@@ -45,7 +45,7 @@ Example `.Rmd` file [here](https://github.com/adamoshen/adam-highlight-theme/blo
 
 Example HTML output [here](https://www.shena.ca/demofile.html).
 
-The `.css` file I have included is only to change the code chunk font from Courier New to Consolas, and is therefore optional.
+The `.css` file I have included is only to change the code font from Courier New to Consolas, and is therefore optional.
 
 ### Why?
 
