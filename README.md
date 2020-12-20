@@ -65,8 +65,9 @@ Alternatively, if you try something like:
 
 ```YAML
 ---
-output: html_document
-pandoc_args: "--highlight-style=adam.theme"
+output: 
+  html_document:
+    pandoc_args: "--highlight-style=adam.theme"
 ---
 ```
 
