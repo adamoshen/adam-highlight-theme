@@ -29,7 +29,7 @@ fav_nums <- c(1, 9, 20, 376, 999)
 ```{r}
 data(rock)
 
-DT::datatable(rock)
+DT::datatable(rock, options=list(dom="tp"))
 ```
 
 ```{r}
