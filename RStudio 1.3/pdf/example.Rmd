@@ -1,0 +1,52 @@
+---
+title: "I Want New Colours for RMarkdown"
+subtitle: "Default colour scheme is boring"
+author: "Adam Shen"
+output:
+  pdf_document:
+    latex_engine: xelatex
+    pandoc_args: "--highlight-style=adam.theme"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo=TRUE, message=FALSE, warning=FALSE)
+```
+
+# Here is some text
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum metus est, tincidunt eu tempus id, auctor in elit. 
+Vivamus porta ornare tellus, non pretium metus luctus non. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+Nam venenatis condimentum felis, non luctus tellus. Maecenas ullamcorper ipsum diam, nec semper odio semper vel. 
+Etiam sagittis dui tristique magna volutpat blandit. Aliquam et tincidunt ante, a placerat urna. Maecenas a nibh leo. 
+Nulla hendrerit luctus pulvinar. In pellentesque molestie ligula. Aenean aliquet vulputate leo ut vehicula.
+
+# Here is a chunk of commented text
+
+```{r}
+# Proin at ante ac ligula lobortis accumsan. Mauris nibh est, sollicitudin ut luctus id,
+# cursus ac quam. Nam id arcu vitae est consectetur finibus non quis turpis. In vel 
+# ultricies dolor. Aenean quis risus luctus, cursus dui vel, dapibus dolor. 
+# Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis 
+# egestas. Morbi sit amet orci purus. Aenean odio enim, vulputate ac sollicitudin et, 
+# molestie euismod tellus. Pellentesque id egestas magna. Etiam sagittis imperdiet eros,
+# finibus rhoncus erat dictum a.
+```
+
+# Here is some code
+
+```{r, eval=FALSE}
+library(dplyr)
+library(genius)
+```
+
+```{r, eval=FALSE}
+song <- genius_lyrics(artist="Lorde", song="Liability", info="features") %>%
+  select(-element_artist) %>%
+  filter(element %in% c("Verse 1", "Verse 2", "Chorus")) %>%
+  distinct(lyric, .keep_all=TRUE)
+```
+
+```{r, eval=FALSE}
+fav_nums <- c(13.1, 14.5, 12.9, 12.7, 13.8, 15.1, 12.5, 13.6, 14.3, 15.6,
+              14.9, 13.5, 12.1, 14.0, 16.2, 11.8, 13.6, 16.1, 15.7, 14.9)
+```
