@@ -78,6 +78,6 @@ you will see from the RMarkdown console output that the specified highlight them
 ## Change log
 
 January 20, 2021:
-- *Release of RStudio 1.4 seemed to change the classifications of various operator types.*
+- *Release of RStudio 1.4 (which came with Pandoc 2.11) seemed to change the classifications of various operator types.*
 - *New theme file created based off of old theme, with minor additional tweaks, in order to match previous styling.*
 - *New folders created to distinguish RStudio version compatibility.*
