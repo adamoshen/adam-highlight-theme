@@ -79,5 +79,5 @@ you will see from the RMarkdown console output that the specified highlight them
 
 January 20, 2021:
 - *Release of RStudio 1.4 seemed to change the classifications of various operator types.*
-- *New theme file created based off of old template, with small minor additional tweaks, in order to match previous output.*
+- *New theme file created based off of old theme, with minor additional tweaks, in order to match previous styling.*
 - *New folders created to distinguish RStudio version compatibility.*
