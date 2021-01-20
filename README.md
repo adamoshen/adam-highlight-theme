@@ -74,3 +74,10 @@ output:
 ```
 
 you will see from the RMarkdown console output that the specified highlight theme is accepted, but a `--no-highlight` is thrown in near the end, which nullifies your specified highlight theme.
+
+## Change log
+
+January 20, 2021:\
+- *Release of RStudio 1.4 seemed to change the classification of various operator types.*\
+- *New theme file created based off of old template, with small minor additional tweaks, in order to match previous output.*\
+- *New folders created to distinguish RStudio version compatibility.*
