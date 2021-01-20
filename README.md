@@ -16,9 +16,9 @@ output:
 
 The `.theme` file can be in the same folder as the `.Rmd` file you are knitting, otherwise the path to the `.theme` file should be specified. **Note that this value must be a string and there cannot be a space before or after the `=` sign.**
 
-Example `.Rmd` file [here](https://github.com/adamoshen/adam-highlight-theme/blob/master/pdf/example.Rmd).
+Example `.Rmd` file [here](https://github.com/adamoshen/adam-highlight-theme/blob/master/RStudio%201.4/pdf/example.Rmd).
 
-Example PDF output [here](https://github.com/adamoshen/adam-highlight-theme/blob/master/pdf/example.pdf).
+Example PDF output [here](https://github.com/adamoshen/adam-highlight-theme/blob/master/RStudio%201.4/pdf/example.pdf).
 
 ## HTML Output
 
@@ -43,7 +43,7 @@ I would recommend making a copy of it and placing it in a location that is easil
 
 Once again, the `.theme` file can be in the same folder as the `.Rmd` file you are knitting, otherwise a path to the `.theme` file should be specified. **Note that the file name or path does not need to be a string (though you can still supply a string).** You can also still specify `theme:` and `css:` values as usual.
 
-Example `.Rmd` file [here](https://github.com/adamoshen/adam-highlight-theme/blob/master/html/demofile.Rmd).
+Example `.Rmd` file [here](https://github.com/adamoshen/adam-highlight-theme/blob/master/RStudio%201.4/html/demofile.Rmd).
 
 Example HTML output [here](https://www.shena.ca/demofile.html).
 
@@ -77,7 +77,7 @@ you will see from the RMarkdown console output that the specified highlight them
 
 ## Change log
 
-January 20, 2021:\
-- *Release of RStudio 1.4 seemed to change the classification of various operator types.*\
-- *New theme file created based off of old template, with small minor additional tweaks, in order to match previous output.*\
+January 20, 2021:
+- *Release of RStudio 1.4 seemed to change the classifications of various operator types.*
+- *New theme file created based off of old template, with small minor additional tweaks, in order to match previous output.*
 - *New folders created to distinguish RStudio version compatibility.*
