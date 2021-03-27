@@ -131,7 +131,7 @@
             "underline": false
         },
         "Documentation": {
-            "text-color": "#ba2121",
+            "text-color": "#5300ff",
             "background-color": null,
             "bold": false,
             "italic": true,
