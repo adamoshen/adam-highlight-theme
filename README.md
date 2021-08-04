@@ -20,7 +20,17 @@ Example `.Rmd` file [here](https://github.com/adamoshen/adam-highlight-theme/blo
 
 Example PDF output [here](https://github.com/adamoshen/adam-highlight-theme/blob/master/RStudio%201.4/pdf/example.pdf).
 
-## HTML Output
+## Change log
+August 4, 2021:
+- *This Pandoc highlight theme is fine for PDF output, but I no longer recommend it for HTML output since it disables MathJax despite using the default template.*
+- *For HTML output, use PrismJS instead (link repo later)*
+
+January 20, 2021:
+- *Release of RStudio 1.4 (which came with Pandoc 2.11) seemed to change the classifications of various operator types.*
+- *New theme file created based off of old theme, with minor additional tweaks, in order to match previous styling.*
+- *New folders created to distinguish RStudio version compatibility.*
+
+## HTML Output (old)
 
 This is slightly trickier with HTML output. The header will look something like:
 
@@ -75,9 +85,3 @@ output:
 
 you will see from the RMarkdown console output that the specified highlight theme is accepted, but a `--no-highlight` is thrown in near the end, which nullifies your specified highlight theme.
 
-## Change log
-
-January 20, 2021:
-- *Release of RStudio 1.4 (which came with Pandoc 2.11) seemed to change the classifications of various operator types.*
-- *New theme file created based off of old theme, with minor additional tweaks, in order to match previous styling.*
-- *New folders created to distinguish RStudio version compatibility.*
