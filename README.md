@@ -56,7 +56,7 @@ Once again, the `.theme` file can be in the same folder as the `.Rmd` file you a
 
 Example `.Rmd` file [here](https://github.com/adamoshen/adam-highlight-theme/blob/master/RStudio%201.4/html/demofile.Rmd).
 
-Example HTML output [here](https://www.shena.ca/demofile.html).
+Example HTML output [here](https://adamoshen.github.io/adam-highlight-theme/).
 
 The `.css` file I have included is used to change the code font from Courier New to Consolas, and is therefore optional.
 
