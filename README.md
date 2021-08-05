@@ -23,7 +23,8 @@ Example PDF output [here](https://github.com/adamoshen/adam-highlight-theme/blob
 ## Change log
 August 4, 2021:
 - *This Pandoc highlight theme is fine for PDF output, but I no longer recommend it for HTML output since it disables MathJax despite using the default template.*
-- *For HTML output, use PrismJS instead (link repo later)*
+- *For HTML output, use PrismJS instead*
+- *See [here](https://github.com/adamoshen/prismr) on how to use PrismJS with RMarkdown HTML output*
 
 January 20, 2021:
 - *Release of RStudio 1.4 (which came with Pandoc 2.11) seemed to change the classifications of various operator types.*
