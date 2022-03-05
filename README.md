@@ -1,26 +1,14 @@
 # My Pandoc Highlight Theme
 
-Default Pandoc highlight themes are kind of boring. Here is the highlight theme I like to use. You can make your own by editing the `.theme` file (mine is based off of the `tango` highlight theme). 
+Default Pandoc highlight themes are kind of boring. Here is the highlight theme I like to use. You can make your own by editing the `.theme` file (mine is based off of the `tango` highlight theme).
 
-## PDF Output
-
-For PDF output, your header should include:
-
-```YAML
 ---
-output:
-  pdf_document:
-    pandoc_args: "--highlight-style=adam.theme"
----
-```
-
-The `.theme` file can be in the same folder as the `.Rmd` file you are knitting, otherwise the path to the `.theme` file should be specified. **Note that this value must be a string and there cannot be a space before or after the `=` sign.**
-
-Example `.Rmd` file [here](https://github.com/adamoshen/adam-highlight-theme/blob/master/RStudio%201.4/pdf/example.Rmd).
-
-Example PDF output [here](https://github.com/adamoshen/adam-highlight-theme/blob/master/RStudio%201.4/pdf/example.pdf).
 
 ## Change log
+
+March 4, 2022:
+- *Release of rmarkdown 2.12 added support for custom highlight themes, which can be supplied directly to the `highlight` argument.*
+
 August 4, 2021:
 - *This Pandoc highlight theme is fine for PDF output, but I no longer recommend it for HTML output since it disables MathJax despite using the default template.*
 - *For HTML output, use PrismJS instead*
@@ -31,17 +19,52 @@ January 20, 2021:
 - *New theme file created based off of old theme, with minor additional tweaks, in order to match previous styling.*
 - *New folders created to distinguish RStudio version compatibility.*
 
-## HTML Output (old)
+---
+
+For updated examples, see [here](https://github.com/adamoshen/highlight-demo).
+
+## PDF Output
+
+```YAML
+output:
+  pdf_document:
+    highlight: adam.theme
+```
+The `.theme` file can be in the same folder as the `.Rmd` file you are knitting, otherwise the path to the `.theme` file should be specified.
+
+## HTML Output
+
+```YAML
+output:
+  html_document:
+    highlight: adam.theme
+```
+
+## PDF Output (Pre-rmarkdown 2.12)
+
+For PDF output, your header should include:
+
+```YAML
+output:
+  pdf_document:
+    pandoc_args: "--highlight-style=adam.theme"
+```
+
+The `.theme` file can be in the same folder as the `.Rmd` file you are knitting, otherwise the path to the `.theme` file should be specified. **Note that this value must be a string and there cannot be a space before or after the `=` sign.**
+
+Example `.Rmd` file [here](https://github.com/adamoshen/adam-highlight-theme/blob/master/RStudio%201.4/pdf/example.Rmd).
+
+Example PDF output [here](https://github.com/adamoshen/adam-highlight-theme/blob/master/RStudio%201.4/pdf/example.pdf).
+
+## HTML Output (Pre-rmarkdown 2.12)
 
 This is slightly trickier with HTML output. The header will look something like:
 
 ```YAML
----
-output: 
+output:
   html_document:
     template: my_template.html
     highlight: adam.theme
----
 ```
 
 The `my_template.html` is a template html file RMarkdown uses when knitting `.Rmd` files to html. You should be able to see the location of this template file in the RMarkdown console output whenever you knit a basic `.Rmd` file to html. This template file can be found in the `rmarkdown` package installation files under:
@@ -65,11 +88,9 @@ The `.css` file I have included is used to change the code font from Courier New
 Everything just "works" when we trick RMarkdown into thinking we have a custom html template, when we are really using the default one. Without specifying a template file, if your header looks like:
 
 ```YAML
----
 output:
   html_document:
     highlight: adam.theme
----
 ```
 
 you will get an error that the theme you have specified is not one of the supported highlight themes.
@@ -77,12 +98,9 @@ you will get an error that the theme you have specified is not one of the suppor
 Alternatively, if you try something like:
 
 ```YAML
----
-output: 
+output:
   html_document:
     pandoc_args: "--highlight-style=adam.theme"
----
 ```
 
 you will see from the RMarkdown console output that the specified highlight theme is accepted, but a `--no-highlight` is thrown in near the end, which nullifies your specified highlight theme.
-
