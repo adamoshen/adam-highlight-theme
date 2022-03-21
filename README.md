@@ -21,7 +21,7 @@ January 20, 2021:
 
 ---
 
-For updated examples, see [here](https://github.com/adamoshen/highlight-demo).
+For additional examples, see [here](https://github.com/adamoshen/highlight-demo).
 
 ## PDF Output
 
